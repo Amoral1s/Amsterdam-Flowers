@@ -1,7 +1,137 @@
 @import "reset"
+.button
+  display: flex
+  min-width: 200px
+  min-height: 50px
+  font-family: $bold
+  justify-content: center
+  align-items: center
+  background-color: $main
+  border-radius: 10px
+  color: #fff
+  border: none
+  font-size: 16px
+  box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.28)
+.header
+  &-bot
+    background-image: url(../img/bg-head.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    box-shadow: 0px 3px 14px 0px rgba(0, 0, 0, 0.28)
+    margin-bottom: 30px
+    &-wrap
+      display: flex
+      align-items: center
+      justify-content: space-between
+      &-cart
+        a
+          display: flex
+          align-items: center
+          color: #ffffff
+          img
+            margin-right: 10px
+          span
+            padding: 0 10px
+            font-size: 18px
+            font-family: $bold
+      &-adress
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        a:last-child
+          padding-left: 20px
+        a
+          color: #fff
+          padding: 1px 0
+          font-size: 14px
+          position: relative
+          display: flex
+          justify-content: center
+          align-items: center
+          img
+            margin-right: 10px
+      &-logo
+        a
+          
+          img
+            width: 100%
+            max-width: 300px
+            height: auto
+      &-menu
+        ul
+          display: flex
+          justify-content: center
+          align-items: center
+          li
+            a
+              color: #fff
+              padding: 0 6px
+              font-size: 14px
+  &-top
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 20px
+    padding-bottom: 20px
+    &-right
+      display: flex
+      justify-content: center
+      align-items: center
+      a
+        padding: 0 5px
+        color: #000
+      a:first-child
+        position: relative
+        padding-left: 15px
+        &:after
+          content: ''
+          position: absolute
+          top: 50%
+          transform: translateY(-50%)
+          left: 0
+          height: 10px
+          width: 10px
+          background-image: url(../img/icons/lc-head.png)
+          background-repeat: no-repeat
+          background-size: cover
+    &-left
+      display: flex
+      justify-content: center
+      align-items: center
+      ul:first-child
+        margin-right: 20px
+      ul
+        display: flex
+        align-items: center
+        justify-content: center
+        li
+          display: flex
+          justify-content: center
+          align-items: center
+          a
+            color: #000000
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 0 5px
+            font-size: 14px
 
-
-
+.offer
+  &-wrap
+    &-item
+      position: relative
+      &-text
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        right: 5%
+        h1
+          font-size: 34px
+          max-width: 400px
+          line-height: 35px
+        p
+          font-size: 14px
+          margin: 15px 0
 
 
 @import "media1200"

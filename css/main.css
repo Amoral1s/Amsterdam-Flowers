@@ -696,6 +696,7 @@ div.title {
   background-image: url(../img/icons/arrow.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.3;
   height: 25px;
   width: 15px;
   cursor: pointer;

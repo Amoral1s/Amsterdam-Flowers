@@ -1,3 +1,116 @@
 @media (max-width: 992px)
-  body
+  .contacts-wrap
+    flex-direction: column
+    align-items: center
+    &-left
+      max-width: 100%
+      width: 100%
+    &-right
+      max-width: 100%
+      width: 100%
+  .catalog-item
+    flex-basis: 48%
+  .rec
+    padding: 30px 0
+    flex-direction: column
+    width: 100%
+    align-items: center
+    justify-content: center
+    &-right
+      max-width: 100%
+      width: 100%
+      justify-content: flex-start
+      padding-left: 20px
+    &-left
+      max-width: 100%
+      width: 100%
+      margin-top: 60px
+      margin-bottom: 70px
+  .rec-left ul.slick-dots
+    bottom: -30px
+  .offer-wrap-item-text
+    right: 0
+    max-width: 300px
+    top: 150px
+  .features
+    margin-top: 0
+    padding-bottom: 0
+  .header-bot
+    margin-bottom: 0
+  .offer
+    padding: 0!important
+    margin: 0!important
+    min-width: 100%!important
+  .header-bot-wrap
+    justify-content: space-between
+    padding: 0 60px
+  .header-bot-wrap-cart
+    position: fixed
+    right: 20px
+    top: 80px
     background-color: #fff
+    font-size: 0
+    border-radius: 50%
+    box-shadow: $shadow
+    z-index: 50
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 7px
+    a
+      position: relative
+      display: flex
+      justify-content: center
+      align-items: center
+    img
+      margin-right: 0
+      z-index: 90
+    span
+      color: #000
+      position: absolute
+      right: -15px
+      top: -15px
+      background-color: #fff
+      z-index: 40
+      border-radius: 20px
+  .header-bot-wrap-cart a img
+    margin-right: 0
+  .header-bot-wrap-menu
+    position: fixed
+    background-color: #fff
+    z-index: 30
+    top: 0
+    left: 0
+    display: none
+    width: 90vw
+    padding: 30px 20px
+    box-shadow: $shadow
+    border-radius: 0 0 10px 0
+    height: 90vh
+    ul
+      flex-direction: column
+      align-items: flex-start
+      li 
+        a 
+          color: #000
+          display: flex
+          padding: 5px
+          font-size: 16px
+  .header-top
+    position: fixed
+    z-index: 33
+    bottom: 15%
+    left: 0px
+    display: none
+    min-width: 90vw
+    padding: 0
+    padding-top: 20px
+    border-top: 2px solid $main
+    &-left
+      justify-content: flex-start
+      padding-left: 20px
+    &-right
+      justify-content: flex-start
+      padding-left: 20px
+      margin-top: 15px
+      margin-left: 5px
